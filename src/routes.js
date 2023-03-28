@@ -9,6 +9,10 @@ const {
 
 const routes = express();
 
+routes.get('/', async (req,res) =>{
+    return res.json('API rodando')
+})
+
 routes.post('/cadastro', validateBodyRiquire(schemaUser), registerUsers);
 routes.get('/User/:username', getDate);
 
