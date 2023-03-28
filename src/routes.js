@@ -5,7 +5,7 @@ const schemaUser = require('./validation/schemaUser');
 const {
     registerUsers,
     getDate
-} = require('./controllers/users');
+} = require('./controllers/Users');
 
 const routes = express();
 
