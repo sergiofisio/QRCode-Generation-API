@@ -5,7 +5,8 @@ const knex = require('knex')({
         port: 5432,
         user: 'postgres',
         password: '123456',
-        database: 'users_registers'
+        database: 'users_registers',
+        ssl: { rejectUnauthorized: false },
     }
 });
 
