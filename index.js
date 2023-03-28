@@ -10,4 +10,8 @@ app.use(cors());
 
 app.use(routes);
 
-app.listen(6000);
+const port  process.enc.PORT || 6000
+
+app.listen(port, () => {
+    console.log(`servidor na porta ${port}`)
+});
